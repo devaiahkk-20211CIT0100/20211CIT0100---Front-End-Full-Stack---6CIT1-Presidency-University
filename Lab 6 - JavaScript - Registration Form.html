@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidency University Student Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        label, textarea {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #28a745;
+        }
+
+        button[type="reset"] {
+            background-color: #dc3545;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        small {
+            color: #777;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"] + label {
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 4px;
+            background-color: #e9e9e9;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return formValidator()" action="right.html">
+        <fieldset>
+            <legend>Presidency University Student Registration</legend>
+            <label for="firstname">First Name<font color="red">*</font></label>
+            <input type="text" id="firstname" required>
+            <br>
+            <label for="lastname">Last Name<font color="red">*</font></label>
+            <input type="text" id="lastname" required>
+            <br>
+            <label for="email">Email Address<font color="red">*</font></label>
+            <input type="email" id="email" required>
+            <small>(one e-mail id only): e.g. smith@example.com</small>
+            <br>
+            <label for="pass">Password<font color="red">*</font></label>
+            <input type="password" id="pass" required minlength="6">
+            <br>
+            <label for="addr">Address<font color="red">*</font></label>
+            <textarea rows="2" cols="20" id="addr" required></textarea>
+            <br>
+            <label for="mobileno">Mobile No<font color="red">*</font></label>
+            <input type="text" id="mobileno" required minlength="10" maxlength="10" pattern="[0-9]+">
+            <br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="g">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="g">
+            <label for="female">Female</label>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
