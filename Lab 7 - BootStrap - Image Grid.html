@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Grid Image</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    img {
+        height: 100%;
+    }
+    .wrapper {
+        max-width: 800px;
+    }
+    body {
+        background-color: #000000; /* Dark grey background color */
+        border-top: 1px solid cyan; /* Thin cyan border at the top */
+        border-bottom: 1px solid #ffff00; /* Thin neon yellow border at the bottom */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+    
+  </style>
+  <body>
+    <div class="wrapper mx-auto py-4">
+        <div class="container">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row ">
+              <div class="col-md-8 pb-4">
+                <img class=" d-block w-100 object-fit-fill" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/09/Cyberpunk-2077-Night-City-District-Heywood.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 pb-4">
+                <img class=" d-block  w-100 object-fit-fill" src="https://www.techpowerup.com/review/cyberpunk-2077-phantom-liberty-benchmark-test-performance-analysis/images/screen001.jpg" alt="">
+              </div>
+            </div>
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+              <div class="col-6 col-md-4 pb-4">
+                <img class="d-block w-100 object-fit-cover" src="https://staticdelivery.nexusmods.com/images/3333/48246148-1696380738.png" alt="https://w.forfun.com/fetch/f8/f8249c81e0a4afd9d5ab22cdda8feea3.jpeg">
+              </div>
+              <div class="col-6 col-md-4 pb-4">
+                <img class=" d-block w-100 object-fit-cover" src="https://static.tweaktown.com/news/16x9/91008_cyberpunk-2077-ray-tracing-overdrive-mode-detailed-in-new-digital-foundry-video.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 pb-4">
+                <img class="d-block  w-100 object-fit-cover" src="https://assetsio.reedpopcdn.com/verticalimage1675968921790-2951976.png?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="">
+              </div>
+            </div>
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+              <div class="col-6 pb-4" >
+                <img class="d-block w-100 object-fit-cover" src="https://images.nvidia.com/aem-dam/en-zz/Solutions/geforce/news/cyberpunk-2077-ray-tracing-overdrive-digital-artist-screenshots/digital-dreams-cyberpunk-2077-overdrive-screenshot-002.jpg" alt="">
+              </div>
+              <div class="col-6 pb-4" >
+                <img class="d-block  w-100 object-fit-cover" src="https://preview.redd.it/path-tracing-is-insanely-gorgeous-in-photo-mode-but-sadly-v0-dkmx9bqpecta1.png?auto=webp&s=efbb783b75c54342e09de4770514e5430ccdbdf3" alt="">
+              </div>
+            </div>
+          </div>
+    </div> 
+    </body>
+  </html>
